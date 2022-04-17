@@ -101,15 +101,15 @@ function addTask() {
   const list = document.querySelector("ul");
 
   // return if task is empty
-  if (task.value === "") {
-    alert("Please add some task!");
-    return false;
-  }
-  // check is task already exist
-  if (document.querySelector(`input[value="${task.value}"]`)) {
-    alert("Task already exist!");
-    return false;
-  }
+  // if (task.value === "") {
+  //   alert("Please add some task!");
+  //   return false;
+  // }
+  // // check is task already exist
+  // if (document.querySelector(`input[value="${task.value}"]`)) {
+  //   alert("Task already exist!");
+  //   return false;
+  // }
 
   // add task to local storage
   localStorage.setItem("tasks", JSON.stringify([...JSON.parse(localStorage.getItem("tasks") || "[]"), { task: task.value, completed: false }]));
@@ -151,19 +151,19 @@ function editTask(event) {
   let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
 
   // check if task is empty
-  if (event.value === "") {
-    alert("Task is empty!");
-    event.value = currentTask;
-    return;
-  }
+  // if (event.value === "") {
+  //   alert("Task is empty!");
+  //   event.value = currentTask;
+  //   return;
+  // }
   // task already exist
-  tasks.forEach(task => {
-    if (task.task === event.value) {
-      // alert("Task already exist!");
-      event.value = currentTask;
-      return;
-    }
-  });
+  // tasks.forEach(task => {
+  //   if (task.task === event.value) {
+  //     // alert("Task already exist!");
+  //     event.value = currentTask;
+  //     return;
+  //   }
+  // });
 
   // update task
   tasks.forEach(task => {
