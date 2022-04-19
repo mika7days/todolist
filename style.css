@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    width: 336px;
+    margin: 100px auto;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.yellow_top {
+    width: 336px;
+    height: 28px;
+    background: #FFDC40;
+    border-radius: 10px 10px 0 0;
+}
+
+.to_do {
+    margin: 17px 0 42px 85px;
+    width: 164px;
+    height: 34px;
+    font-family: 'Roboto', sans-serif;;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.logo {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    left: 281px;
+    top: 91px;
+    cursor: pointer;
+}
+
+/* Input box properties */
+
+.input_box {
+    margin-top: 10px;
+    margin-left: 30px;
+    max-width: 283px;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+}
+
+#div {
+    display: flex;
+}
+
+.input {
+    border-style: none;
+    width: 213px;
+    height: 42px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: 12px;
+    outline: none;
+}
+
+/* Remove button properties */
+
+.remove {
+    position: relative;
+    margin: 10px 0 0 10px;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.remove p {
+    position: absolute;
+    transform: rotate(45deg);
+    left: 4.5px;
+    bottom: -3.5px;
+    color: #C4C4C4;
+    font-size: 25px;
+}
+
+.remove:hover {
+    background-color: #833AE0;
+    border: 1px solid #833AE0;
+    color: white;
+}
+
+/* Add button properties */
+
+.button {
+    position: relative;
+    width: 150px;
+    height: 42px;
+    margin-top: 18px;
+    margin-left: 92px;
+    margin-bottom: 19px;
+    border-radius: 20px;
+}
+
+.add_button {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: 150px;
+    height: 42px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgb(131 58 224);
+    cursor: pointer;
+    text-align: center;
+}
+
+.add_button p {
+    position: absolute;
+    color: white;
+    left: 70px;
+    top: 13px;
+}
+
+.plus_button {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    left: -2px;
+    bottom: -2px;
+    background-color: rgb(153 83 241);
+    cursor: pointer;
+}
+
+.plus_button p {
+    position: absolute;
+    color: white;
+    top: 13px;
+    left: 17px;
+}
