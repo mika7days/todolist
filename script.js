@@ -17,7 +17,6 @@ const input = document.querySelector('.input');
       input.addEventListener('blur',_=>{
         input.setAttribute("value",input.value)
       })
-    
 
 /* ------------------------------------------------------------------------------ */
 
@@ -112,12 +111,12 @@ input_box.innerHTML='';
   if(counter == 0) {
       domcreator(counter);
       counter++;
-      logo.src="upblack.svg"
+      logo.src = "upblack.svg";
 
   } else {
       domcreator(counter);
       counter--;
-      logo.src="downblack.svg"
+      logo.src = "upblack.svg";
   }
 arr=[];
 }
@@ -169,4 +168,4 @@ function domcreator(el){
         `;
       });
        input_box.innerHTML=element
-}}
+}};
