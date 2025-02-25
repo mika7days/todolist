@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Todo List</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="yellow_top"></div>
-        <div class="header">
-            <div class="to_do">To-Do List</div>
-            <div class="filters">
-                <span class="filter active" data-filter="all">All</span>
-                <span class="filter" data-filter="active">Active</span>
-                <span class="filter" data-filter="completed">Completed</span>
-            </div>
-            <i class="fas fa-sort-amount-down sort-icon" id="pic"></i>
+      <div class="yellow_top"></div>
+      <div class="header">
+        <div class="to_do">To-Do List</div>
+        <div class="filters">
+          <span class="filter active" data-filter="all">All</span>
+          <span class="filter" data-filter="active">Active</span>
+          <span class="filter" data-filter="completed">Completed</span>
         </div>
+        <i class="fas fa-sort-amount-down sort-icon" id="pic"></i>
+      </div>
 
-        <div class="input_box">
-            <div id="div" class="add-task">
-                <input class="input main-input" type="text" placeholder="Add a new task...">
-                <button class="add-btn">+</button>
-            </div>
-            <div class="tasks-container"></div>
+      <div class="input_box">
+        <div id="div" class="add-task">
+          <input
+            class="input main-input"
+            type="text"
+            placeholder="Add a new task..."
+          />
+          <button class="add-btn">+</button>
         </div>
+        <div class="tasks-container"></div>
+      </div>
 
-        <div class="list-info">
-            <span class="tasks-count">0 items left</span>
-            <button class="clear-completed">Clear completed</button>
-        </div>
+      <div class="list-info">
+        <span class="tasks-count">0 items left</span>
+        <button class="clear-completed">Clear completed</button>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
